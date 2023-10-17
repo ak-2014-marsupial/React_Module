@@ -1,0 +1,50 @@
+.wrapper{
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: azure;
+    width: 100%;
+}
+
+
+.w-40{
+    width: 40%;
+}
+.w-30{
+    width: 30%;
+}
+.w-60{
+    width: 60%;
+
+}
+.border{
+    border: 1px solid red;
+}
+.flex-x{
+    display: flex;
+    gap: 1.5em;
+    overflow: hidden;
+
+}
+.wrap{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.p-05{
+    padding: 0.5em;
+}
+
+.image{
+    width: 100%;
+}
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.wrapper-2{
+    color: azure;
+background: rgb(60, 62, 68);
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;;
+
+}
