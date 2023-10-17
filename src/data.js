@@ -1,4 +1,4 @@
-let simpsonsData = [
+let data = [
     {name: 'Bart', surname: 'Simpson', age: 10,info:'Бартолом\'ю ДжоДжо «Барт» Сімпсон (англ. Bartholomew JoJo «Bart» Simpson) — один із головних героїв мультиплікаційного серіалу Сімпсони. Барт — найстарша дитина Гомера і Мардж Сімпсон. У нього також є дві молодші сестри — Ліса і Меґґі. Барт є втіленням образу бешкетника та посереднього учня у школі. Разом зі своїм батьком Барт є одним із найвідоміших персонажів у цьому серіалі.', photo: 'https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png'},
     {name: 'Homer', surname: 'Simpson', age: 40,info:'Гомер Джей Сімпсон (англ. Homer Jay Simpson) — один із головних героїв мультсеріалу «Сімпсони». Гомер — грубий і неввічливий батько родини, він має очевидні вади: товстий, лисий і не дуже розумний. Нерідко він поводиться як блазень, абсурдно, егоїстично і нетактовно, але все ж лишається симпатичним.', photo: 'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'},
     {name: 'Marge', surname: 'Simpson', age: 38,info:'Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале. У неё шикарные синие волосы, которые она обычно собирает в очень высокую причёску. Глаза цвета ореха (19s6e). Основное занятие — домохозяйка, большую часть времени проводит в заботе о доме, детях и Гомере. Образ Мардж копирует стереотип провинциальной американской домохозяйки 50-х годов. Мардж — единственный член семьи, посещающий церковь добровольно. Старается поддерживать нравственность не только своей семьи, но и всего города. Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.', photo: 'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'},
@@ -9,10 +9,11 @@ let simpsonsData = [
 
 let rickandmortData=[
     {"id":1,"name":"Rick Sanchez","status":"Alive","species":"Human","type":"","gender":"Male","image":"https://rickandmortyapi.com/api/character/avatar/1.jpeg"},
-    {"id":2,"name":"Morty Smith","status":"Alive","species":"Human","type":"","gender":"Male","image":"https://rickandmortyapi.com/api/character/avatar/2.jpeg",},
-    {"id":3,"name":"Summer Smith","status":"Alive","species":"Human","type":"","gender":"Female","image":"https://rickandmortyapi.com/api/character/avatar/3.jpeg",},
-    {"id":4,"name":"Beth Smith","status":"Alive","species":"Human","type":"","gender":"Female","image":"https://rickandmortyapi.com/api/character/avatar/4.jpeg",},
-    {"id":5,"name":"Jerry Smith","status":"Alive","species":"Human","type":"","gender":"Male","image":"https://rickandmortyapi.com/api/character/avatar/5.jpeg",},
+    {"id":2,"name":"Morty Smith","status":"Alive","species":"Human","type":"","gender":"Male","image":"https://rickandmortyapi.com/api/character/avatar/2.jpeg"},
+    {"id":3,"name":"Summer Smith","status":"Alive","species":"Human","type":"","gender":"Female","image":"https://rickandmortyapi.com/api/character/avatar/3.jpeg"},
+    {"id":4,"name":"Beth Smith","status":"Alive","species":"Human","type":"","gender":"Female","image":"https://rickandmortyapi.com/api/character/avatar/4.jpeg"},
+    {"id":5,"name":"Jerry Smith","status":"Alive","species":"Human","type":"","gender":"Male","image":"https://rickandmortyapi.com/api/character/avatar/5.jpeg"},
+    {"id":11,"name":"Albert Einstein","status":"Dead","species":"Human","type":"","gender":"Male","origin":{"name":"Earth (C-137)","url":"https://rickandmortyapi.com/api/location/1"},"location":{"name":"Earth (Replacement Dimension)","url":"https://rickandmortyapi.com/api/location/20"},"image":"https://rickandmortyapi.com/api/character/avatar/11.jpeg","episode":["https://rickandmortyapi.com/api/episode/12"],"url":"https://rickandmortyapi.com/api/character/11","created":"2017-11-04T20:20:20.965Z"},
 ]
-export {simpsonsData};
+export {data};
 export {rickandmortData}
