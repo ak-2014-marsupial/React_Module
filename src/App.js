@@ -1,9 +1,10 @@
 import React from 'react';
+import {Posts} from "./components/PostsContainer/PostDetails/Posts";
 
 const App = () => {
     return (
         <div>
-          Hello React from App
+          <Posts/>
         </div>
     );
 };
