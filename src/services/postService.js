@@ -4,6 +4,7 @@ import {urls} from "../constants/urls";
 const postService = {
     getAll: () => {
         axiosService.get(urls.posts.base)
+            // .then(({data})=> console.log(data))
     },
 
 }

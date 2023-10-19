@@ -19,7 +19,7 @@ const Posts = () => {
 
        postService.getAll()
            .then(({data})=> console.log(data))//Cannot read properties
-                                            // of undefined (reading 'then')
+           //                                  // of undefined (reading 'then')
 
     },[])
 
