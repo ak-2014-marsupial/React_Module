@@ -1,0 +1,13 @@
+.post{
+    border: 1px solid red;
+    border-radius: 0.5em;
+    background-color: azure;
+    margin: 0.5em;
+    padding: 0.5em;
+    width: calc(20% - 40px);
+}
+.button{
+    background-color: rgba(0, 128, 0, 0.49);
+    border-radius: 0.5em;
+    border: 1px solid red;
+}
