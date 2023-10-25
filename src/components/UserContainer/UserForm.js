@@ -1,15 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {useForm} from "react-hook-form";
 import {userService} from "../../services/userService";
 
 const UserForm = ({setUsers}) => {
-    // const [user,setUser]=useState({})
     const {reset, handleSubmit, register} = useForm();
     const  save = async (user) => {
-        console.log(user);
         // userService.create(user).then(({data})=> console.log(data))
         const {data} = await userService.create(user);
         setUsers(prev => [...prev, data])
+        reset()
 
     }
     return (

@@ -10,7 +10,7 @@ const UserContainer = () => {
     }, []);
 
     return (
-        <div>
+        <div style={{width:"50%"}}>
             <UserForm setUsers={setUsers}/>
             <hr/>
              <Users users={users}/>
