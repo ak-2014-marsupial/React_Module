@@ -13,7 +13,7 @@ const urls={
     },
     posts:{
         base:"/posts",
-        getById:(id)=>`/${this.base}/${id}`
+        getById:(id)=>`/posts/${id}`
     }
 
 }
