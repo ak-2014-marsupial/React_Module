@@ -1,0 +1,14 @@
+.comments{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    padding: 0.5em;
+    justify-content: center;
+}
+
+.comment{
+    width: 30%;
+    padding: 0.5em;
+    background-color: antiquewhite;
+    border-radius: 0.5em;
+}

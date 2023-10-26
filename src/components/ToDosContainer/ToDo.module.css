@@ -1,0 +1,14 @@
+.todos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+    padding: 0.5em;
+}
+.todo{
+    background-color: bisque;
+    border: 1px solid red;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    width: 20%;
+}
