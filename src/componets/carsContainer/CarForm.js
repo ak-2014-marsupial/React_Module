@@ -5,7 +5,7 @@ import {joiResolver} from "@hookform/resolvers/joi"
 import {carService} from "../../services/carService";
 import {carValidator} from "../../validators/carValidator";
 
-const CarForm = ({setTrigger, carForUpdate}) => {
+const CarForm = ({ carForUpdate, trigger, setCarForUpdate}) => {
     const {
         register, handleSubmit, reset,
         formState: {isValid, errors}, setValue
@@ -20,11 +20,19 @@ const CarForm = ({setTrigger, carForUpdate}) => {
     setValue("price", carForUpdate.price, {shouldValidate: true});
     setValue("year", carForUpdate.year, {shouldValidate: true});
         }
-    }, [carForUpdate]);
+    }, [carForUpdate, setValue]);
     const save = async (car) => {
         await carService.create(car);
-        setTrigger(prev => !prev);
+        // setTrigger(prev => !prev);
+        trigger();
         reset();
+    }
+
+    const update =async (car)=>{
+        await carService.updateById(carForUpdate.id,car);
+        trigger();
+        setCarForUpdate(null);
+        reset()
     }
 
     return (
@@ -48,15 +56,18 @@ const CarForm = ({setTrigger, carForUpdate}) => {
         //     {errors.year && <div>{errors.year.message}</div>}
         // </form>
 
-        <form onSubmit={handleSubmit(save)}>
-            <input type="text" placeholder={"brand"} name={"brand"} {...register("brand")}/>
-            <input type="text" placeholder={"price"} name={"price"} {...register("price", {valueAsNumber: true})}/>
-            <input type="text" placeholder={"year"} name={"year"} {...register("year", {valueAsNumber: true})}/>
-            <button disabled={!isValid}>Save</button>
-            {errors.brand && <div>{errors.brand.message}</div>}
-            {errors.price && <div>{errors.price.message}</div>}
-            {errors.year && <div>{errors.year.message}</div>}
-        </form>
+       <div>
+           <form onSubmit={handleSubmit(carForUpdate ? update : save)}>
+               <input type="text" placeholder={"brand"} name={"brand"} {...register("brand")}/>
+               <input type="text" placeholder={"price"} name={"price"} {...register("price", {valueAsNumber: true})}/>
+               <input type="text" placeholder={"year"} name={"year"} {...register("year", {valueAsNumber: true})}/>
+               <button disabled={!isValid}>{carForUpdate ? 'Update' : 'Save'}</button>
+
+           </form>
+           {errors.brand && <div>{errors.brand.message}</div>}
+           {errors.price && <div>{errors.price.message}</div>}
+           {errors.year && <div>{errors.year.message}</div>}
+       </div>
     );
 };
 
