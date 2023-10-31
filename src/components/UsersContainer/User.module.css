@@ -1,0 +1,28 @@
+.Users{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: cadetblue;
+    gap: 0.5em;
+    padding: 0.5em;
+    }
+.user{
+    background-color: beige;
+    border: 1px solid red;
+    border-radius: 0.5em;
+    width: 30%;
+    padding: 0.5em;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user button{
+    display: block;
+    max-width: 50%;
+    border: 1px solid red;
+    font-size: 1.2em;
+    border-radius: inherit;
+}
