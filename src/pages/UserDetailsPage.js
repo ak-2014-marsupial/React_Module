@@ -1,17 +1,18 @@
 import React from 'react';
-import {useLoaderData, useParams} from "react-router-dom";
+import {Outlet, useLoaderData, useNavigate} from "react-router-dom";
+
+import UserDetails from "../components/UsersContainer/UserDetails";
+import css from "./UsersPage.module.css"
 
 const UserDetailsPage = () => {
-
-    // let {userId} = useParams();
-
     const {data} = useLoaderData();
-
-    console.log(data);
+    const navigate = useNavigate();
 
     return (
-        <div>
-            <h1>UserDetails</h1>
+        <div className={css.UsersPage}>
+            {<UserDetails data={data}/>}
+            <button onClick={() => navigate(`posts`)}>Posts of current user</button>
+            <Outlet/>
         </div>
     );
 };

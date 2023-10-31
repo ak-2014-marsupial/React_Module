@@ -1,10 +1,23 @@
 import React from 'react';
 
-const PostDetails = () => {
+import css from "./Post.module.css"
+
+const PostDetails = ({post}) => {
+    const {userId,id,title,body}=post;
     return (
-        <div>
-            <h1>Post Details</h1>
-        </div>
+        <>
+            <h2>Post details:</h2>
+
+            <div className={css.posts}>
+                <div className={css.post}>
+                    <div> userId: {userId}</div>
+                    <div> id: {id}</div>
+                    <div> title: {title}</div>
+                    <div> body: {body}</div>
+                </div>
+            </div>
+        </>
+
     );
 };
 

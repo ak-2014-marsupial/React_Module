@@ -3,7 +3,6 @@ import {useNavigate} from "react-router-dom";
 
 import css from "./User.module.css"
 
-
 const User = ({user}) => {
     let navigate = useNavigate();
 

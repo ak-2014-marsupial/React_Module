@@ -17,12 +17,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
 }
 
 .user button{
     display: block;
-    max-width: 50%;
+    width: 50%;
     border: 1px solid red;
-    font-size: 1.2em;
-    border-radius: inherit;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 0.7em;
+
 }
+
+

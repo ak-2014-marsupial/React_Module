@@ -1,0 +1,40 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    gap: 0.5em;
+    border: 1px solid red;
+    border-radius: 0.5em;
+    margin: 0.5em;
+    background-color: azure;
+    width: 40%;
+}
+
+.post button {
+    display: block;
+    width: 50%;
+    border: 1px solid red;
+    border-radius: 0.5em;
+    height: 1.6em;
+}
+
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.posts button{
+    display: block;
+    width: 30%;
+    border: 1px solid red;
+    border-radius: 0.5em;
+    height: 1.6em;
+
+}
+h2{
+    color: white;
+    text-align: center;
+}
