@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4em;
+    background-color: lightblue;
+    color: snow;
+    height:50px ;
+}
+
+.header a{
+    text-decoration: none;
+    color: snow;
+    margin: 0 0.2em;
+}
+
+.header a[class="active"]{
+    color:red;
+}
