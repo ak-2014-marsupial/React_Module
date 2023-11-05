@@ -1,0 +1,7 @@
+.episode{
+    border: 1px solid red;
+    border-radius: 0.5em;
+    background-color: azure;
+    width: 23%;
+    padding: 0.5em;
+}

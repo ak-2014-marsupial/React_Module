@@ -1,0 +1,8 @@
+.episodes{
+background-color: burlywood;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    padding: 0.5em 0;
+}
