@@ -15,5 +15,36 @@
     padding: 0.5em;
     background-color: cornsilk;
     cursor: pointer;
+    position: relative;
+}
+.post:hover{
+    background-color: cadetblue;
+}
+
+.post:hover .comment{
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleX(1);
+    transition: transform 1.5s ease;
+
+    border-radius: 1em;
+}
+
+.comment{
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: #FFAB51;
+    transition: transform 1s ease;
+    position: absolute;
+    left:-5em;
+    right: -5em;
+    bottom: 5em;
+    z-index: 200;
+
 
 }
+

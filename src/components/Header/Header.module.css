@@ -9,6 +9,7 @@
     align-items: center;
     gap: 2em;
     font-size: 2em;
+    z-index: 300;
 }
 .header a{
     text-decoration: none;
