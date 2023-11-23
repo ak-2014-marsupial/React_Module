@@ -1,0 +1,16 @@
+.cars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em   ;
+    padding: 1em;
+    background-color: lightblue;
+}
+.car{
+    width: 25%;
+    padding: 1em;
+    background-color: bisque;
+    border: 1px solid red;
+    border-radius: 1em;
+}
